@@ -1,0 +1,116 @@
+body {
+  min-height: 100vh;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  overflow: hidden;
+  margin: 20px;
+  width: 1080px;
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: hsl(184, 100%, 22%);
+  padding: 50px;
+  width: 300px;
+  min-height: 500px;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.card:first-of-type {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card:first-of-type .moreBtn {
+  color: hsl(31, 77%, 52%);
+}
+
+.card:first-of-type .moreBtn:active {
+  background-color: hsl(31, 77%, 52%);
+  color: #ffffff;
+}
+
+.card:last-of-type {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card:last-of-type .moreBtn {
+  color: hsl(179, 100%, 13%);
+}
+
+.card:last-of-type .moreBtn:active {
+  background-color: hsl(179, 100%, 13%);
+  color: #ffffff;
+}
+
+.header {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-size: 40px;
+}
+
+.moreBtn {
+  background-color: #ffffff;
+  color: hsl(184, 100%, 22%);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: bold;
+  height: 50px;
+  min-width: 150px;
+  border-radius: 40px;
+  border: 0;
+  margin-top: auto;
+}
+
+.moreBtn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.moreBtn:active {
+  background-color: hsl(184, 100%, 22%);
+  color: #ffffff;
+  border: #ffffff 3px solid;
+}
+
+.attribution {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  font-size: 11px;
+  text-align: center;
+  background-color: #444;
+  padding: 5px 0;
+}
+.attribution a {
+  color: hsl(0, 66%, 73%);
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin: 20px 0;
+  }
+}
