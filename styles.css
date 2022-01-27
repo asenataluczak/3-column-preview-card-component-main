@@ -8,7 +8,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .container {
@@ -91,7 +90,7 @@ body {
 }
 
 .attribution {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100vw;
