@@ -2,7 +2,7 @@
 
 ![](./images/logo_lit.jpg)
 
-This project was build as a part of frontend classes conducted within the Information Technology Club [LearnIT](learnit.how).
+This project was build as a part of frontend classes conducted within the Information Technology Club [LearnIT](learnit.how) :)
 
 ***
 
