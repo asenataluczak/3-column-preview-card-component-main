@@ -1,74 +1,54 @@
 body {
-  min-height: 100vh;
+  /* basic settings and margin reset */
   font-size: 15px;
   font-family: "Lexend Deca", sans-serif;
-  color: hsla(0, 0%, 100%, 0.75);
+  color: rgba(255, 255, 255, 0.75);
   margin: 0;
+  
+  /* min-height to center the container vertically */
+  min-height: 100vh;
 
+  /* centering the container */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .container {
-  overflow: hidden;
   margin: 20px;
   width: 1080px;
-  
+
+  /* cards positioning */
   display: flex;
   justify-content: space-between;
 }
 
 .card {
-  background-color: hsl(184, 100%, 22%);
+  background-color: #006970;
   padding: 50px;
   width: 300px;
   min-height: 500px;
-  box-sizing: border-box;
   border-radius: 10px;
-
+  box-sizing: border-box;
+  
+  /* card's content positioning */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
 }
 
-.card:first-of-type {
-  background-color: hsl(31, 77%, 52%);
-}
-
-.card:first-of-type .moreBtn {
-  color: hsl(31, 77%, 52%);
-}
-
-.card:first-of-type .moreBtn:active {
-  background-color: hsl(31, 77%, 52%);
-  color: #ffffff;
-}
-
-.card:last-of-type {
-  background-color: hsl(179, 100%, 13%);
-}
-
-.card:last-of-type .moreBtn {
-  color: hsl(179, 100%, 13%);
-}
-
-.card:last-of-type .moreBtn:active {
-  background-color: hsl(179, 100%, 13%);
-  color: #ffffff;
-}
-
 .header {
   font-family: "Big Shoulders Display", cursive;
   text-transform: uppercase;
-  color: hsl(0, 0%, 95%);
+  color: #f2f2f2;
   font-size: 40px;
 }
 
+/* basic button settings (the one in the middle) */
 .moreBtn {
   background-color: #ffffff;
-  color: hsl(184, 100%, 22%);
+  color: #006970;
   font-family: "Lexend Deca", sans-serif;
   font-weight: bold;
   height: 50px;
@@ -89,20 +69,52 @@ body {
   border: #ffffff 3px solid;
 }
 
+/* first card button overrides */
+.card:first-of-type {
+  background-color: #e38826;
+}
+
+.card:first-of-type .moreBtn {
+  color: #e38826;
+}
+
+.card:first-of-type .moreBtn:active {
+  background-color: #e38826;
+  color: #ffffff;
+}
+
+/* last card button overrides */
+.card:last-of-type {
+  background-color: #004241;
+}
+
+.card:last-of-type .moreBtn {
+  color: #004241;
+}
+
+.card:last-of-type .moreBtn:active {
+  background-color: #004241;
+  color: #ffffff;
+}
+
 .attribution {
+  /* fixed positioning in the bottom */
   position: fixed;
   left: 0;
   bottom: 0;
+
   width: 100vw;
   font-size: 11px;
   text-align: center;
   background-color: #444;
   padding: 5px 0;
 }
+
 .attribution a {
-  color: hsl(0, 66%, 73%);
+  color: #00b688;
 }
 
+/* media queries - to change styles, when the page reaches max-width 992px */
 @media screen and (max-width: 992px) {
   .container {
     flex-direction: column;
