@@ -1,8 +1,12 @@
+# 3-column preview card component solution
+
+***
+
 ![](./images/logo_lit.jpg)
 
-### 3-column preview card component solution
-
 This project was build as a part of frontend classes conducted within the Information Technology Club [LearnIT](learnit.how).
+
+***
 
 ### The challenge
 
